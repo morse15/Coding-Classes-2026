@@ -66,5 +66,3 @@ elif age<=18:
     print ("Your ticket is $25")
 else:
     print ("Your ticket is $40")
-
-
