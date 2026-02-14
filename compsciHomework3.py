@@ -91,8 +91,9 @@ people = [person1,person2,person3]
 
 #use a for loop and print all the information
 for person in people:
-    #[firstName] [lastName] is currently [age] and lives in [city]
-    print (f"{person["firstName"]} {person["lastName"]} is currently {person["age"]} and lives in {person["city"]}")
+    for v in person.values():
+        print (v)
+    print("\n")
 
 #6-8
 #make 3 dictionaries for 3 different pets
@@ -118,11 +119,6 @@ pet3 = {
 pets = [pet1,pet2,pet3]
 #print the information
 for pet in pets:
-   #The [species] name is [name] and it is owned by [owner]
-   print(f"The {pet["species"]}'s name is {pet["name"]} and it is owned by {pet["owner"]}")
-   #if pet's species -1 == h, print es
-   if (pet["species"][-1]) == ("h"):
-       print(f"{pet['species']}es") 
-   else:
-       print(f"{pet['species']}s")
-       
+    for k,v in pet.items():
+        print (f"{k.title()} : {v.title()}")
+    print("\n")
