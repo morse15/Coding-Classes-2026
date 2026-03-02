@@ -37,7 +37,6 @@ while True:
 
 #8-10
 #copy 8-9
-texts = ["Hello","Hi","How are you","I'm alright","...","...","Goodbye","Bye"]
 #create a function to print each message
 # def messages(lists):
 #     for list in lists:
@@ -46,13 +45,15 @@ texts = ["Hello","Hi","How are you","I'm alright","...","...","Goodbye","Bye"]
 # messages(texts)
 #move each message to a new list as it is printed
 sentMessages = []
-def sendMessages(lists1):
-    for text in lists1:
-        a = text
-        print (a)
-        sentMessages.append(a)
-        texts.remove(a)
+def sendMessages(texts):
+    for text in texts:
+        print(text)
+        sentMessages.append(text)
+        del text
+texts = ["Hello","Hi","How are you","I'm alright","...","...","Goodbye","Bye"]
 sendMessages(texts)
+print(sentMessages)
+print(texts)
     
 #8-11
 

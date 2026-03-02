@@ -11,7 +11,7 @@ print("I really love pizza")
 #store the names of 3 animals in a list and a for loop to print each name
 animals = ["cow","goat","chicken"]
 for animal in animals:
-    print(animal
+    print(animal)
 #print a statement about each animal in a for loop
 for animal in animals:
     print (f"a {animal} is a farm animal")
@@ -19,8 +19,8 @@ for animal in animals:
 print ("They are all regularly eaten")
 
 
-make a list 1 - 1000000
-make an empty list
+#make a list 1 - 1000000
+#make an empty list
 one_million = []
 #use for loop to append the digits into the list
 for value in range(1,1001):
@@ -50,7 +50,7 @@ for value in range(1,11):
 print(cubes)
 
 #cubes list comprehension
-cubess = [val**3 for val in range(1,11)]
+cubess = [val**3 for val in range(1,11) if val%2 == 0, elif val**2]
 print(cubess)
 #print the first three items in the list
 print (f"The first three items in the list are {cubess[0:3]}")
