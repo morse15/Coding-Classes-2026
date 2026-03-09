@@ -2,6 +2,11 @@
 pizzas = ["pepperoni","suya","cheese"]
 for pizza in pizzas:
     print(pizza)
+
+x = len(pizzas)
+for y in range(x):
+    print (f"The best pizza combination is {pizzas[y]} and {pizzas[y-2]}")
+
 #have a for loop print a sentence containing the name of each pizza
 for pizza in pizzas:
     print(f"I like {pizza} pizza")
@@ -32,7 +37,7 @@ print(max(one_million))
 print(sum(one_million))
 
 #make a list of odd numbers from 1-20 and print each number
-odd_numbers = []
+odd_numbers = [10,11]
 for value in range(1,20,2):
     odd_numbers.append(value)
 print(odd_numbers)
@@ -50,7 +55,7 @@ for value in range(1,11):
 print(cubes)
 
 #cubes list comprehension
-cubess = [val**3 for val in range(1,11) if val%2 == 0, elif val**2]
+cubess = [val**3 for val in range(1,11)]
 print(cubess)
 #print the first three items in the list
 print (f"The first three items in the list are {cubess[0:3]}")
