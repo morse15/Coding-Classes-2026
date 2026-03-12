@@ -8,6 +8,6 @@ class Restaurant:
     def open(self):
         print(f"{self.name} is open")
 
-place = Restaurant("Mega Chicken","Nigerian")
-place.describe()
-place.open()
+#place = Restaurant("Mega Chicken","Nigerian")
+#place.describe()
+#place.open()

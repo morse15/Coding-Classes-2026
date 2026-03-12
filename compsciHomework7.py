@@ -91,9 +91,10 @@ Restaurant5.describe()
 #write method increment_loginAttempts which increments loginAttempts by 1
 #write method reset_loginAttempts which resets loginAttempts to 0
 person3 = User("Jane","Doe",30,"F")
+#call increment multiple times and verify that it works
 person3.increment_loginAttempts()
 person3.increment_loginAttempts()
 person3.increment_loginAttempts()
 person3.increment_loginAttempts()
-person3.increment_loginAttempts()
+#call reset and verify it works
 person3.reset_loginAttempts()
