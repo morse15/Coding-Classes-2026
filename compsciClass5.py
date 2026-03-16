@@ -40,7 +40,7 @@ poll = {}
 while True:
     name = input("\nWhat is your name?: ")
     dreamVacation = input("\nIf you could visit one place in the world where would you go?: ")
-    poll[name.title()] = dreamVacation.title()
+    poll[name.title()] = dreamVacation.title
     again = input("\nIs anyone else going to answer this poll?(Y/N): ")
     again = again.upper()
     if again == ("N"):

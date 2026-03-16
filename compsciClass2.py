@@ -37,7 +37,7 @@ print(max(one_million))
 print(sum(one_million))
 
 #make a list of odd numbers from 1-20 and print each number
-odd_numbers = [10,11]
+odd_numbers = []
 for value in range(1,20,2):
     odd_numbers.append(value)
 print(odd_numbers)

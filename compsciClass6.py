@@ -52,8 +52,8 @@ messages(texts)
 
 #write a function that accepts any number of toppings 
 def sandwich(*toppings):
-    print ("These are the toppings you've chosen")
+    print ("These are the toppings you've chosen:")
     for top in toppings:
         print(top)
 
-sandwich("pepperoni","blah","blue","bluh")
+sandwich("pepperoni")
