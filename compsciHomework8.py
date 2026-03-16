@@ -66,8 +66,6 @@ car.battery.upgradeBattery()
 #call get_range again
 car.battery.get_range()
 
-#9-11
-#9-12
 #9-13
 #make a class Die with attribute 'sides'
 from random import randint
@@ -125,6 +123,21 @@ dice3.rollDie()
 #make a list containing 10 numbers and 5 letters
 list1 = ["a",1,"b",2,"c",3,"d",4,"e",5,"f","g","h","i","j"]
 from random import choice
-winner = choice(list1)
-print (f"\nThe winning ticket is {winner}")
+
+w = choice(list1)
+i = choice(list1)
+nn = choice(list1)
+er = choice(list1)
+print (f"\nThe winning ticket is {w},{i},{nn},{er}")
+
 #9-15
+#write a list called my ticket
+#write a loop that only stops once your ticket has won
+myTicket = ["a",1,"b",2]
+while True:
+    if [w,i,nn,er] == myTicket:
+        print("Your ticket has won!")
+        break
+    else:
+        print("Try again next time")
+        
