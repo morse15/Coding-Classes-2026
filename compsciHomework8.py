@@ -7,8 +7,6 @@ class Privileges:
     def showPrivileges(self):
         for privilege in self.privileges:
             print (privilege.title())
-#make a privileges instance as an attribute in Admin
-#create a new instance of Admin and showPrivileges
 
 #9-9
 #use electricCar.py as given in the question
