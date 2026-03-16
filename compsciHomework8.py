@@ -132,12 +132,21 @@ print (f"\nThe winning ticket is {w},{i},{nn},{er}")
 
 #9-15
 #write a list called my ticket
-#write a loop that only stops once your ticket has won
+#write a loop that only stops once your ticket has won and print how many loops it took to get there
 myTicket = ["a",1,"b",2]
+counter = 0
 while True:
-    if [w,i,nn,er] == myTicket:
+    w1 = choice(list1)
+    i1 = choice(list1)
+    nn1 = choice(list1)
+    er1 = choice(list1)
+    if [w1,i1,nn1,er1] == myTicket:
         print("Your ticket has won!")
+        counter = counter + 1
+        print(counter)
         break
     else:
         print("Try again next time")
+        counter = counter + 1
+        print(counter)
         
