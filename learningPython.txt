@@ -1,0 +1,4 @@
+In python you can print
+In python you can use lists and tuples
+In python you can work with dictionaries and classes
+e.t.c

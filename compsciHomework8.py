@@ -66,12 +66,11 @@ car.battery.upgradeBattery()
 #call get_range again
 car.battery.get_range()
 
-#9-11
-#9-12
 #9-13
-#make a class Die with attribute 'sides'
+#make a class "Die" with attribute 'sides'
 from random import randint
 class Die:
+    #sides should default to 6
     def __init__(self,sides = 6):
         self.sides = sides
     #write method rollDie which simulates rolling a die
@@ -125,6 +124,33 @@ dice3.rollDie()
 #make a list containing 10 numbers and 5 letters
 list1 = ["a",1,"b",2,"c",3,"d",4,"e",5,"f","g","h","i","j"]
 from random import choice
-winner = choice(list1)
-print (f"\nThe winning ticket is {winner}")
+
+w = choice(list1)
+i = choice(list1)
+nn = choice(list1)
+er = choice(list1)
+winner = f"{choice(list1)}{choice(list1)}{choice(list1)}{choice(list1)}"
+winner = list(winner)
+print(winner)
+print (f"\nThe winning ticket is {w},{i},{nn},{er}")
+
 #9-15
+#write a list called my ticket
+#write a loop that only stops once your ticket has won and print how many loops it took to get there
+myTicket = ["a",1,"b",2]
+counter = 0
+# while True:
+#     w1 = choice(list1)
+#     i1 = choice(list1)
+#     nn1 = choice(list1)
+#     er1 = choice(list1)
+#     if [w1,i1,nn1,er1] == myTicket:
+#         print("Your ticket has won!")
+#         counter = counter + 1
+#         print(f"It took {counter} tries for your ticket to win")
+#         break
+#     else:
+#         print("Better luck next time")
+#         counter = counter + 1
+#         print(f"This is try {counter}")
+        
