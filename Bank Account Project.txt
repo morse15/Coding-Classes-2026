@@ -1,0 +1,59 @@
+Bank Account Simulator
+
+A bank account has an owner, a balance, operations: deposit, withdraw, checkbalance
+
+Important rules you should know
+The amount you want to withdraw cannot be more than your balance
+E.g 4000, when you have just 1000, can’t work
+
+You cannot deposit a negative money
+E.g Lohi deposits -20
+
+Balance should update correctly
+
+
+Case study:
+
+Lohi deposits 500
+Bal = 500
+
+Lohi withdraw 200
+Bal = 300
+
+Lohi withdraw 1000
+Bal = 300
+output= Insufficient funds
+
+Create account
+Show menu
+User chooses the action 
+Perform the action 
+Update the balance 
+
+Methods - deposits withdraw check balance
+
+Demo
+Welcome Favour!
+
+1. Deposit
+2. Withdraw
+3. Check Balance
+4. Exit
+
+Choose: 1
+Enter amount: 500
+Deposited: 500
+
+Choose: 2
+Enter amount: 200
+Withdrew: 200
+
+Choose: 3
+Current balance: 300
+
+Choose: 2
+Enter amount: 1000
+Insufficient funds
+
+Choose: 4
+Goodbye!

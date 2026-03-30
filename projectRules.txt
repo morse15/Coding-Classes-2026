@@ -1,0 +1,44 @@
+Highest unit we can have is a 4 unit course (this should not matter)
+
+0 - 100 
+In the University of Ibadan
+70 - 100 - A - 4 points
+60 - 69 - B - 3 points
+50 - 59 - C - 2 points
+45 - 49 - D - 1 point
+0 - 44 - F - 0 point
+
+Case study
+CSC101 - Introduction to Programming - 3 unit course
+Lohi had 88/100 - A - 4 *  3 = 12
+CSC102 - Data structure - 4 unit course 
+Lohi had 72/100 - A - 4 * 4 = 16
+GES106 - French - 2 unit course
+Lohi had 62/100 -  B - 3 * 2  = 6
+
+CGPA calculation 
+Total points gained / total units of courses
+12 + 16 + 6 /  3 + 4 + 2
+34 / 9 = 3.78 / 4.00
+
+output:
+Enter number of courses: 2
+
+Enter course name: CSC101
+Enter score: 75
+Enter unit: 3
+
+Enter course name: MTH102
+Enter score: 65
+Enter unit: 2
+
+-----------------------------------
+Course   Score   Grade   Unit   Point
+-----------------------------------
+CSC101   75      A       3      15
+MTH102   65      B       2      8
+-----------------------------------
+Total Units: 5
+Total Points: 23
+GPA: 4.60
+-----------------------------------

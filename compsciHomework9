@@ -1,15 +1,105 @@
 #10-2
+#import the path from 10-1
+from pathlib import Path
+L_py = Path("learningPython.txt")
+L_python = L_py.read_text()
+#replace python with C
+L_C = L_python.replace("python","C")
+#print the statement
+print(L_C)
+print("\n")
 
 #10-3
+test = L_python.splitlines()
+for letter in test:
+    print(letter)
+print("\n")
+
+#a more concise version of the code on top
+for lines in L_python.splitlines():
+    print(lines)
+print("\n")
 
 #10-5
+#write a while loop that prompts users for their name and adds it to guest.txt
+guests = ""
+path = Path("guest.txt")
+print ("Input 'q' when you are done adding names")
+while True:
+    name = input("What is your name: \n")
+    if name.lower() != "q":
+        guests += (f"{name.title()}\n")
+    else:
+        break
+path.write_text(guests)
+print("\n")
 
 #10-6
+#make a program that prints two numbers together accounting for Value Errors
+try:
+    firstNum = int(input("Give me a number: "))
+    secondNum = int(input("Give me a second number: "))
+    print (f"This is the sum of those two numbers: {firstNum + secondNum}")
+except ValueError:
+    print("That is not a number")
+print("\n")
 
 #10-7
+#do 10-6 again but as a while loop
+firstNum = 0
+secondNum = 0
+print("Enter 'q' at any time to quit the loop")
+while True:
+    try:
+        firstNum = input("Give me a number: ")
+        if firstNum == "q":
+            break
+        firstNum = int(firstNum)
+        secondNum = input("Give me a second number: ")
+        if secondNum == "q":
+            break
+        secondNum = int(secondNum)
+        print (f"This is the sum of those two numbers: {firstNum + secondNum}\n")
+    except ValueError:
+        print("That is not a number\n")
 
 #10-8
+#make cats.txt and add 3 names to it
+#do the same to dog.txt
+#read the content of the files and print in a try except block
+try: 
+    cats = Path("cats.txt")
+    readCats = cats.read_text()
+    print(readCats)
+    print(" ")
+
+    dogs = Path("dogs.txt")
+    readDogs = dogs.read_text()
+    print(readDogs)
+
+except FileNotFoundError:
+    print ("That file cannot be found.")
+
 
 #10-9
+#modify 10-8 so it fails silently
+try: 
+    cats = Path("cats.txt")
+    readCats = cats.read_text()
+    print(readCats)
+    print(" ")
+
+    dogs = Path("dogs.txt")
+    readDogs = dogs.read_text()
+    print(readDogs)
+except FileNotFoundError:
+    pass
 
 #10-10
+#count the amount of "the"s in a text
+AIW = Path("Alice In Wonderland.txt")
+AIWcopy = AIW[:]
+print(AIWcopy)
+readAIW = AIW.read_text(encoding = 'utf-8')
+thes = readAIW.lower().count("the ")
+print (f"\nThere are {thes} 'the's in {AIW[:3]}")
