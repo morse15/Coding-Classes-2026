@@ -51,8 +51,3 @@ class Solution3:
 
 c = Solution3("one two three one")
 c.lengthOfLastWord()
-
-#     elements           = [scorelist[index] for index in element_indices]
-#     difference         = elements[-1] - elements[0]
-#     print(difference)
-#     differenced_scores.append(difference)
